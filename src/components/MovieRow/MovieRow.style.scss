@@ -1,0 +1,26 @@
+.title {
+  margin-left: 10px;
+}
+
+.item {
+  outline: none;
+  cursor: pointer;
+
+  .image {
+    width: 150px;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .item {
+    .image {
+      width: 25px;
+    }
+  }
+}
